@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
-
+import Link from "next/link";
 export function LampDemo() {
     return (
         <LampContainer>
@@ -31,7 +31,9 @@ export function LampDemo() {
                 }}
                 className="mt-8 flex flex-col items-center"
             >
+                <Link href={'/home'}>
                 <button type="button" className="px-6 py-3 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-700 dark:focus:ring-blue-800 font-medium rounded-lg text-sm shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 text-center me-2 mb-2 shadow-lg">Get Started</button>
+                </Link>
                 
 
             </motion.div>
