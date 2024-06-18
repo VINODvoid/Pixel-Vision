@@ -1,22 +1,21 @@
-"use client";
-import React from "react";
-import Navbar from "@/components/Navbar";
-import FileUploadSection from "@/components/FileUploadSection";
-import Footer from "@/components/Footer";
-import Card from "@/components/Card";
 
-export default function MainPage() {
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import Card from '@/components/Card';
+import { motion } from 'framer-motion';
+
+const MainPage = () => {
     return (
         <div className="bg-slate-950 min-h-screen">
             <Navbar />
-            <div className="container mx-auto px-4 py-8 pt-24">  {/* Add pt-24 to create space for the fixed navbar */}
+            <div className="container mx-auto px-4 py-8 pt-24">
                 <section className="text-center text-white mb-12">
                     <h1 className="text-4xl font-bold mb-4">Welcome to Our Image Processing Hub</h1>
                     <p className="text-lg">
                         Discover cutting-edge technologies and techniques in image processing, from medical diagnostics to automated handwriting recognition.
                     </p>
                 </section>
-                {/* <FileUploadSection /> */}
                 <section className="my-12">
                     <h2 className="text-2xl font-semibold text-white mb-6">Our Services</h2>
                     <div className="flex justify-center flex-wrap gap-6 mb-6">
@@ -27,7 +26,7 @@ export default function MainPage() {
                             path="#"
                         />
                         <Card
-                            title="Recognition of Handwriting "
+                            title="Recognition of Handwriting"
                             description="Utilize advanced image processing techniques to accurately interpret and digitize handwritten text. Enhance data entry efficiency and accuracy with cutting-edge handwriting recognition technology."
                             imageUrl="/images/hand.png"
                             path="#"
@@ -57,4 +56,6 @@ export default function MainPage() {
             <Footer />
         </div>
     );
-}
+};
+
+export default MainPage;
