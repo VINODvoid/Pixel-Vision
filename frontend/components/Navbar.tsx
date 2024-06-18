@@ -7,18 +7,18 @@ export default function Navbar() {
     return (
         <header className="bg-slate-950 fixed top-0 left-0 right-0 z-50 rounded-b-xl">
             <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6 relative">
-                <Link href="/" className="flex items-center gap-4 cursor-pointer" prefetch={false}>
+                <Link href="/" prefetch={false} className="flex items-center gap-4 cursor-pointer">
                     <MountainIcon className="h-8 w-8 text-cyan-500" />
                     <span className="text-2xl font-semibold text-white">Pixel-Vision</span>
                 </Link>
                 <nav className="hidden md:flex items-center gap-6">
-                    <Link href="#" className="text-sm font-medium text-gray-300 hover:text-white" prefetch={false}>
+                    <Link href="/" prefetch={false} className="text-sm font-medium text-gray-300 hover:text-white">
                         Home
                     </Link>
-                    <Link href="#" className="text-sm font-medium text-gray-300 hover:text-white" prefetch={false}>
+                    <Link href="/about" prefetch={false} className="text-sm font-medium text-gray-300 hover:text-white">
                         About
                     </Link>
-                    <Link href="#" className="text-sm font-medium text-gray-300 hover:text-white" prefetch={false}>
+                    <Link href="/contact" prefetch={false} className="text-sm font-medium text-gray-300 hover:text-white">
                         Contact
                     </Link>
                 </nav>
@@ -32,13 +32,13 @@ export default function Navbar() {
                         </SheetTrigger>
                         <SheetContent side="right" className="bg-slate-950 text-white">
                             <div className="grid gap-4 p-6">
-                                <Link href="#" className="text-sm font-medium text-gray-300 hover:text-white" prefetch={false}>
+                                <Link href="/" prefetch={false} className="text-sm font-medium text-gray-300 hover:text-white">
                                     Home
                                 </Link>
-                                <Link href="#" className="text-sm font-medium text-gray-300 hover:text-white" prefetch={false}>
+                                <Link href="/about" prefetch={false} className="text-sm font-medium text-gray-300 hover:text-white">
                                     About
                                 </Link>
-                                <Link href="#" className="text-sm font-medium text-gray-300 hover:text-white" prefetch={false}>
+                                <Link href="/contact" prefetch={false} className="text-sm font-medium text-gray-300 hover:text-white">
                                     Contact
                                 </Link>
                             </div>
@@ -52,6 +52,7 @@ export default function Navbar() {
         </header>
     );
 }
+
 
 function MenuIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     return (

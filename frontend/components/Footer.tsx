@@ -9,15 +9,15 @@ const Footer = () => {
                 <div className="flex items-center gap-2">
                     <Link href="#" className="flex items-center gap-2" prefetch={false}>
                         <MountainIcon className="h-8 w-8 text-cyan-500"  />
-                        <span className="text-lg font-semibold">Acme Inc</span>
+                        <span className="text-lg font-semibold text-cyan-500">Pixel-Vision</span>
                     </Link>
                 </div>
-                <p className="text-xs text-gray-500 dark:text-gray-400">&copy; 2024 Acme Inc. All rights reserved.</p>
+                <p className="text-xs text-gray-100 dark:text-gray-400">&copy; 2024 Acme Inc. All rights reserved.</p>
                 <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-                    <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
+                    <Link href="#" className="text-gray-100 dark:text-gray-400 text-xs hover:underline underline-offset-4" prefetch={false}>
                         Terms of Service
                     </Link>
-                    <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
+                    <Link href="#" className="text-gray-100 dark:text-gray-400 text-xs hover:underline underline-offset-4" prefetch={false}>
                         Privacy
                     </Link>
                 </nav>
